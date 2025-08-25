@@ -1,5 +1,5 @@
-# projeto-integrador
-Este repositório tem como objetivo armazenar os arquivos da matéria de Projeto Integrador da universidade UniCeub. O tema/nome do projeto que está sendo desenvolvido é "**Site de certificação da monitoria do CEUB**".
+# Solução de emissão de certificados da monitoria do CEUB
+Este repositório tem como objetivo armazenar os arquivos da matéria de Projeto Integrador II da universidade CEUB. O nome do projeto que está sendo desenvolvido é "**Solução de emissão de certificados da monitoria do CEUB**".
 
 Esse projeto consiste em criar um site para facilitar o processo de entrega de certificados dos minicursos/oficinas organizados e realizados pela monitoria da universidade propriamente dita.
 
@@ -13,7 +13,7 @@ O projeto surgiu da proposta de facilitar o envio dos certificados das oficinas 
 - Bibliotecas como Router, Axios e Cors.
 - Supabase como banco de dados
 #### Além dessas tecnologias, também estamos utilizando das seguintes ferramentas:
-- ClickUp - Alocação de tarefas, documentação do projeto e histórias de usuários.
+- Github Projects - Alocação de tarefas, documentação do projeto e histórias de usuários.
 - Figma - Design do site
 - Discord e WhatsApp - Comunicação
 - Github - Versionamento do projeto
@@ -68,7 +68,7 @@ A princípio, o projeto disponibilizará as seguintes funcionalidades.
 - Permitir que os monitores vejam e utilizem do processo de emissão de certificado para aprovar os alunos de suas oficinas
 - Permitir que os monitores cadastrem as suas turmas e às disponibilizem aos seus alunos. 
 
-Para saber mais, acesse o [Escopo do projeto](https://docs.google.com/document/d/1RyOy5Z-JlPvY33MGmqHTKD1hUmSSMS9YT-ahRDMf9HI/edit?usp=sharing).
+Para saber mais, acesse o [Escopo do projeto](https://docs.google.com/document/d/1RyOy5Z-JlPvY33MGmqHTKD1hUmSSMS9YT-ahRDMf9HI/edit?usp=sharing), ou vá ao repositório dos documentos dentro da organização e acesse o escopo por lá.
 
 ## Colaboradores
 - Felipe Tolentino: Desenvolvedor, Designer de UI/UX, Gerente de projeto, Documentador
