@@ -1,9 +1,9 @@
-# Solução de emissão de certificados da monitoria do CEUB
-Este repositório tem como objetivo armazenar os arquivos da matéria de Projeto Integrador II da universidade CEUB. O nome do projeto que está sendo desenvolvido é "**Solução de emissão de certificados da monitoria do CEUB**".
+# Solução para Emissão de Certificados
+Este repositório tem como objetivo armazenar os arquivos da matéria de PROJETO INTEGRADOR II da universidade CEUB. O nome do projeto que está sendo desenvolvido é "**Solução para Emissão de Certificados**".
 
-Esse projeto consiste em criar um site para facilitar o processo de entrega de certificados dos minicursos/oficinas organizados e realizados pela monitoria da universidade propriamente dita.
+Esse projeto consiste em criar um site para facilitar o processo de entrega de certificados de cursos/oficinas organizados e realizados por organizações ou indivíduos que necessitam de um modelo para tal.
 
-O projeto surgiu da proposta de facilitar o envio dos certificados das oficinas da monitoria do CEUB, pois, atualmente, o processo é lento e está causando confusão entre os alunos. Por exemplo, alguns alunos não recebem os certificados mesmo após meses depois da conclusão de uma oficina. Até nós que estamos desenvolvendo o projeto já fomos afetados por este problema. A partir dessa proposta, nós modelamos estratégias para solucionar esse problema, sendo a solução o desenvolvimento de nossa aplicação.
+O projeto surgiu da proposta de facilitar o envio dos certificados das oficinas da monitoria do CEUB, mas, após uma conversa com com o coordenador do curso, descobrimos que essa solução já estava sendo desenvolvida, mas que poderíamos desenvolver algo similar e geral para preencher outras lacunas. A partir dessa proposta, nós modelamos estratégias para solucionar esse problema, sendo a solução o desenvolvimento de nossa aplicação.
 
 ## Parte técnica
 #### Esse projeto está sendo desenvolvido com as seguintes tecnologias:
@@ -34,11 +34,9 @@ O projeto surgiu da proposta de facilitar o envio dos certificados das oficinas 
 ## Objetivos iniciais
 Alguns dos nossos objetivos para esse projeto consistem em:
 1. Desenvolver a tela de cadastro e login ✔️
-2. Desenvolver a parte de criação de turmas e conexão delas aos monitores envolvidos - Previsão: 10/09/2025
-3. Desenvolver a tela de emissão de certificados (mesmo que em fase de teste) - Previsão: 10/10/2025
-4. Adicionar/Alterar estrutura do banco de dados para funcionar em relação aos itens anteriores - Tarefa contínua
+2. Desenvolver telas de quem está criando um certificado e de quem está utilizando do site para assinar um certificado
+3. Adicionar/Alterar estrutura do banco de dados para funcionar em relação aos itens anteriores
 
-*Todas as datas contidas nessa secção são apenas estimativas.*
 
 ## Estrutura do Projeto
 A seguir, temos a estrutura do projeto ao acessar a pasta `certificados-monitoria`.
@@ -65,8 +63,8 @@ A seguir, temos a estrutura do projeto ao acessar a pasta `certificados-monitori
 
 ## Funcionalidades do projeto
 A princípio, o projeto disponibilizará as seguintes funcionalidades.
-- Permitir que os monitores vejam e utilizem do processo de emissão de certificado para aprovar os alunos de suas oficinas
-- Permitir que os monitores cadastrem as suas turmas e às disponibilizem aos seus alunos. 
+- Permitir que quem criou um certificado vejam e utilizem do processo de emissão de certificados para aprovar seus usuários de suas oficinas ou cursos
+- Permitir que quem quer assinar um certificado consiga ver os certificados que tem disponíveis para ele e propriamente selecione um para fazer a assinatura.
 
 Para saber mais, acesse o [Escopo do projeto](https://docs.google.com/document/d/1RyOy5Z-JlPvY33MGmqHTKD1hUmSSMS9YT-ahRDMf9HI/edit?usp=sharing), ou vá ao repositório dos documentos dentro da organização e acesse o escopo por lá.
 
