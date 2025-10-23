@@ -1,4 +1,19 @@
 .MainHeader {
-    background-color: rgb(43, 43, 57);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--header-bg);
+    color: var(--text-color);
     padding: 10px;
+}
+
+.header-img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.header-img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
 }
