@@ -1,6 +1,6 @@
-export default function Header({ header }){
+export default function Header({ className }){
     return(
-        <div className={header}>
+        <div className={className}>
             <h1>SEC</h1>
         </div>
     )

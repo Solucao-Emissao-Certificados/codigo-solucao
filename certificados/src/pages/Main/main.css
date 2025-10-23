@@ -1,17 +1,16 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .Main{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
 }
 
-.MainHeader,
-.MainBody, 
+.MainHeader{
+    flex: 1;
+}
+.MainBody {
+    flex: 1;
+}
 .MainForms
 {
-    flex: 1 1 1;
+    flex: 5;
 }

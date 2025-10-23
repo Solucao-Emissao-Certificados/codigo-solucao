@@ -1,11 +1,14 @@
 import iconUser from "../../../../img/IconUser.png"
-
-import "../maincards.css"
+import styles from "../maincards.module.css"
 
 export default function UserCard() {
     return(
-        <div className="main-card">
-            <img src={iconUser} alt="Icone do Usuário" className="img-card"/>
+        <div className={styles.mainCard}>
+            <img 
+                src={iconUser}
+                 alt="Icone do Usuário"
+                className={styles.imgCard}
+            />
             <h2>Usuário</h2>
             <p>
                 Responsável os certificados recebidos em seu e-mail vinculado,

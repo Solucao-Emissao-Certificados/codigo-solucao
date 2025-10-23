@@ -1,6 +1,6 @@
-export default function MainBody({ MainPage }) {
+export default function MainBody({ className }) {
     return(
-        <div className={ MainPage }>
+        <div className={ className }>
             <h2>Bem vindo ao Sistema de Emissão de Certificados</h2>
 
             <p>

@@ -1,21 +1,19 @@
 .MainForms {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
+  display: flex;
+  justify-content: center; /* centraliza os cards horizontalmente */
+  align-items: flex-start; /* alinha pelo topo */
+  gap: 60px;               /* espaçamento entre os cards */
+  flex-wrap: wrap;          /* permite que os cards quebrem linha */
 }
 
-.link-representante-card, 
+.link-representante-card,
 .link-user-card {
-    text-decoration: none;
-    color: white;
-    width: 20%;
-    aspect-ratio: 1/1;
-}
+  text-decoration: none;
+  color: white;
 
-.link-representante-card:hover, 
-.link-user-card:hover {
-    text-decoration: none;
-    color: white;
+  flex: 0 0 350px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
