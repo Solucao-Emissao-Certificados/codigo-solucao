@@ -1,9 +1,10 @@
 .MainForms {
   display: flex;
-  justify-content: center; /* centraliza os cards horizontalmente */
-  align-items: flex-start; /* alinha pelo topo */
-  gap: 60px;               /* espaçamento entre os cards */
-  flex-wrap: wrap;          /* permite que os cards quebrem linha */
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  gap: 60px;     
+  flex-wrap: wrap;          
 }
 
 .link-representante-card,
@@ -16,4 +17,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.link-representante-card:hover,
+.link-user-card:hover {
+    color: white;
 }
