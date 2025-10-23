@@ -5,13 +5,18 @@ export default function LoginUser() {
     return(
         <div className="Login">
             <img src={IconUser} alt="Icone Usuário" />
-            <h2>Login Usuário</h2>
+            <h2 className="login-titulo">Login Usuário</h2>
             <form className="login-form">
-                <label>Seu Email</label>
-                <input className="login-input" type="email" placeholder="email@email.com"/>
+                <label htmlFor="email">
+                    Seu Email
+                    <input className="login-input" type="email" placeholder="email@email.com" id="email"/>
+                </label>
+                
 
-                <label>Sua Senha</label>
-                <input className="login-input" type="password" />
+                <label htmlFor="password">
+                    Sua Senha
+                    <input className="login-input" type="password" id="password"/>
+                </label>
 
                 <label htmlFor="remember">
                     <input type="checkbox" id="remember"/>

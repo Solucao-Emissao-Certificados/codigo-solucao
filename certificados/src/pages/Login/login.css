@@ -1,16 +1,65 @@
+.Login{
+    width: 400px;
+}
+.login-titulo::after{
+    content: "";
+    display: block;
+    bottom: 100px;
+    height: 4px;
+    width: 70%;
+    background-color: #8a2be2;
+    margin: 5px auto 0;
+    animation: colorChange 5s linear infinite;
+}
+
+@keyframes colorChange {
+    0% { background-color: #8A2BE2; }
+    25% { background-color: #FF00FF; }
+    50% { background-color: #4169E1; }
+    75% { background-color: #20B2AA; }
+    100% { background-color: #8A2BE2; }
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 10px;
+    gap: 35px;
+
+    min-width: 50%;
+
 }
+
 .login-form > :last-child {
     align-self: center;
 }
+.login-form label[for="email"] {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 8px;
+
+    width: 100%;
+}
+
+.login-form label[for="password"] {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 8px;
+
+    width: 100%;
+}
+
 .login-form label[for="remember"] {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+}
+.login-input {
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
 }
 
 .login-button {
