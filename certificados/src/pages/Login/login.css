@@ -1,12 +1,28 @@
-.Login{
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+.login-container{
     width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    gap: 20px;
+
 }
 .login-titulo::after{
     content: "";
     display: block;
     bottom: 100px;
     height: 4px;
-    width: 70%;
+    width: 100%;
     background-color: #8a2be2;
     margin: 5px auto 0;
     animation: colorChange 5s linear infinite;
@@ -24,9 +40,11 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    justify-content: center;
+    align-content: center;
     gap: 35px;
 
-    min-width: 50%;
+    min-width: 100%;
 
 }
 .login-form > :last-child {

@@ -1,3 +1,5 @@
+import "./mainbody.css"
+
 export default function MainBody({ className }) {
     return(
         <div className={ className }>
@@ -5,9 +7,7 @@ export default function MainBody({ className }) {
 
             <p>
                 Nosso sistema é responsável por centralizar o processo de
-                emissão e assinatura de certificados eletrônicos.
-            </p>
-            <p>
+                emissão e assinatura de certificados eletrônicos.<br />
                 Você deseja acessar o sistema como:
             </p>
             
