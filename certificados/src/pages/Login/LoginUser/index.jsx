@@ -19,7 +19,7 @@ export default function LoginUser() {
                 </label>
 
                 <label htmlFor="remember">
-                    <input type="checkbox" id="remember"/>
+                    <input type="checkbox" id="remember" />
                     Manter-me logado
                 </label>
                 
