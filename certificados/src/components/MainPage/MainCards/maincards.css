@@ -1,0 +1,18 @@
+.main-card {
+    border: 3px solid rgb(43, 43, 57);
+    aspect-ratio: 1/1;
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 20px;
+
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.img-card{
+    align-self: center;
+}

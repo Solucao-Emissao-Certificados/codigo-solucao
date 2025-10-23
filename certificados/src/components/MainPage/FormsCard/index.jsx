@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom"
+import RepresentanteCard from "../MainCards/RepresentanteCard"
+import UserCard from "../MainCards/UserCard"
+
 import "./formsCard.css"
 
-export default function FormsCard() {
+export default function FormsCard({ className }) {
     return(
-        <div className="forms-card">
-            <Link to='/LoginRepresentante'><button>Representante</button></Link>
-            <Link to='/LoginUser'><button>Usuário</button></Link>
+        <div className={className}>
+            <Link to='/LoginRepresentante' className="link-representante-card">
+                < RepresentanteCard />
+            </Link>
+            <Link to='/LoginUser' className="link-user-card">
+                < UserCard />
+            </Link>
         </div>
     )
 }

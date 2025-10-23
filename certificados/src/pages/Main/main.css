@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.MainHeader,
+.MainBody, 
+.MainForms
+{
+    flex: 1 1 1;
+}

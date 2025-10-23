@@ -1,0 +1,21 @@
+.MainForms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.link-representante-card, 
+.link-user-card {
+    text-decoration: none;
+    color: white;
+    width: 20%;
+    aspect-ratio: 1/1;
+}
+
+.link-representante-card:hover, 
+.link-user-card:hover {
+    text-decoration: none;
+    color: white;
+}
