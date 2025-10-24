@@ -13,7 +13,6 @@ export default function LoginRepresentante() {
                         <input className="login-input" type="email" placeholder="email@email.com" id="email" />
                     </label>
 
-
                     <label htmlFor="password">
                         Sua Senha
                         <input className="login-input" type="password" id="password" />

@@ -20,6 +20,14 @@ export default function App() {
         Component={LoginUser}
         />
         
+        <Route 
+        path="/Home/:id"
+        element={
+          <ProtectRoute>
+            <Home />
+          </ProtectRoute>
+        }
+        />
       </Routes>
     </Router>
   )
