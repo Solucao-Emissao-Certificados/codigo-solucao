@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
-import { Navigate } from "react-router-dom"
+import { Navigate } from "react-router-dom";
+import { supabase } from "../../services/supabase";
 
-function ProtectRoute({ children }) {
-    const [loading, setLoading] = useState(true);
-   const [isAuthenticated, setIsAuthenticated] = useState(false);
+export default function ProtectRoute({ children }) {
+  const [loading, setLoading] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-   useEffect(() => {
+  useEffect(() => {
     async function checkSession() {
-        const { data } = await supabase.auth.getSession();
-        setIsAuthenticated(!!data.session);
-        setLoading(false)
+      const { data } = await supabase.auth.getSession();
+      setIsAuthenticated(!!data.session);
+      setLoading(false);
     }
     checkSession();
-   }, []);
-   if (loading) return <p>Carregando....</p>
-   return isAuthenticated ? children : <Navigate to='/home'/>
+  }, []);
 
+  if (loading) return <p>Carregando...</p>;
+  return isAuthenticated ? children : <Navigate to="/loginuser" />;
 }

@@ -33,7 +33,7 @@ export default function LoginUser() {
             console.log('Usuário encontrado: ', data[0]);
             setMessage('Login realizado com sucesso!')
             setTimeout(() => {
-                navigate(`/home/${usuarios.id}`)
+                navigate(`/homeuser/${usuarios.id}`)
             }, 1500);
         } else {
             console.log('Usuário não encontrado ou senha incorreta.');

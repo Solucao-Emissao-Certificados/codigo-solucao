@@ -1,30 +1,32 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+
 import Main from "../pages/Main"
 import LoginRepresentante from "../pages/Login/LoginRepresentante"
 import LoginUser from "../pages/Login/LoginUser"
-import './App.css'
+import HomeUser from "../pages/Home/HomeUser"
+import ProtectRoute from "../components/ProtectRoute"
 
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route path="/"
-        Component={Main}
+        element={<Main />}
         />
 
         <Route path="/loginrepresentante"
-        Component={LoginRepresentante}
+        element={<LoginRepresentante />}
         />
 
         <Route path="/loginuser"
-        Component={LoginUser}
+        element={<LoginUser />}
         />
         
         <Route 
-        path="/home/:id"
+        path="/homeuser/"
         element={
           <ProtectRoute>
-            <Home />
+            <HomeUser />
           </ProtectRoute>
         }
         />
