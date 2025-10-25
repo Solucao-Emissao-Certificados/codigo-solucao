@@ -7,10 +7,10 @@ import "./formsCard.css"
 export default function FormsCard({ className }) {
     return(
         <div className={className}>
-            <Link to='/LoginRepresentante' className="link-representante-card">
+            <Link to='/loginrepresentante' className="link-representante-card">
                 < RepresentanteCard />
             </Link>
-            <Link to='/LoginUser' className="link-user-card">
+            <Link to='/loginuser' className="link-user-card">
                 < UserCard />
             </Link>
         </div>

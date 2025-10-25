@@ -12,16 +12,16 @@ export default function App() {
         Component={Main}
         />
 
-        <Route path="/LoginRepresentante"
+        <Route path="/loginrepresentante"
         Component={LoginRepresentante}
         />
 
-        <Route path="/LoginUser"
+        <Route path="/loginuser"
         Component={LoginUser}
         />
         
         <Route 
-        path="/Home/:id"
+        path="/home/:id"
         element={
           <ProtectRoute>
             <Home />
