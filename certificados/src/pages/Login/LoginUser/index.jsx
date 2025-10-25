@@ -29,12 +29,12 @@ export default function LoginUser() {
         }
 
         if (data.length > 0) {
-            const usuario = data[0];
+            const usuarios = data[0];
             console.log('Usuário encontrado: ', data[0]);
             setMessage('Login realizado com sucesso!')
             setTimeout(() => {
                 navigate(`/homeuser/${usuarios.id}`)
-            }, 1500);
+            }, 1500)
         } else {
             console.log('Usuário não encontrado ou senha incorreta.');
         }

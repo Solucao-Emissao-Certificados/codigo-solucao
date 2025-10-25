@@ -1,7 +1,8 @@
 export default function HomeUser () {
+    
     return(
         <div>
-            sla
+            <h2>Bem vindo!!</h2>
         </div>
     )
 }

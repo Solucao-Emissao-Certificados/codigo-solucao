@@ -20,6 +20,7 @@
 body.light {
   --header-bg: #f3f3f3;
   --text-color: #1e1e1e;
+  --button-color: #f3f3f3;
   --body-bg: #d8d8db;
 }
 
@@ -70,7 +71,7 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--button-color);
   transition: border-color 0.25s;
 }
 

@@ -1,19 +1,31 @@
-import { useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Navigate, useParams } from "react-router-dom";
 import { supabase } from "../../services/supabase";
 
 export default function ProtectRoute({ children }) {
+  const { id } = useParams(); // pega o :id da URL
   const [loading, setLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    async function checkSession() {
-      const { data } = await supabase.auth.getSession();
-      setIsAuthenticated(!!data.session);
+    async function checkUser() {
+      const { data, error } = await supabase
+        .from("usuarios")
+        .select("id")
+        .eq("id", id)
+        .single();
+
+      if (error || !data) {
+        setIsAuthenticated(false);
+      } else {
+        setIsAuthenticated(true);
+      }
+
       setLoading(false);
     }
-    checkSession();
-  }, []);
+
+    checkUser();
+  }, [id]);
 
   if (loading) return <p>Carregando...</p>;
   return isAuthenticated ? children : <Navigate to="/loginuser" />;

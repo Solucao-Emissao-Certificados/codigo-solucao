@@ -11,19 +11,19 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/"
-        element={<Main />}
+        Component={Main}
         />
 
         <Route path="/loginrepresentante"
-        element={<LoginRepresentante />}
+        Component={LoginRepresentante}
         />
 
         <Route path="/loginuser"
-        element={<LoginUser />}
+        Component={LoginUser}
         />
         
         <Route 
-        path="/homeuser/"
+        path="/homeuser/:id"
         element={
           <ProtectRoute>
             <HomeUser />
