@@ -1,0 +1,10 @@
+.non-certificado-home{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.non-home-img {
+    height: auto;
+    align-self: center;
+}

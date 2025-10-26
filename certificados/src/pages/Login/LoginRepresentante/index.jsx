@@ -38,9 +38,7 @@ export default function LoginRepresentante() {
         } else {
             console.log('Dados não encontrado ou senha incorreta.');
         }
-
     }
-
     return (
         <div className="Login">
             <div className="login-container">

@@ -1,0 +1,15 @@
+.non-certificado-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.non-home-img {
+    height: auto;
+    align-self: center;
+}
+.non-certificados-button{
+    width: 350px;
+}

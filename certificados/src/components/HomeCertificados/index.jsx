@@ -1,11 +1,11 @@
 import { supabase } from '../../services/supabase'
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import EmptyUser from '../EmptiesMessage/EmptyUser';
+import EmptyRepresentante from '../EmptiesMessage/EmptyRepresentante';
 
-import "./homecards.css"
+import "./homecertificados.css"
 
-export default function HomeCards({ className }) {
+export default function HomeCertificados({ className }) {
     const { id } = useParams();
     const [cursos, setCursos] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -42,7 +42,7 @@ export default function HomeCards({ className }) {
                     </div>
                 ) : (
                     <>
-                    <EmptyUser />
+                    <EmptyRepresentante />
                     </>
                 )}
             </div>
