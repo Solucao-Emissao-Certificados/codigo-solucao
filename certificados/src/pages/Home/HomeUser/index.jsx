@@ -1,8 +1,13 @@
+import Header from "../../../components/header"
+import HomeCards from "../../../components/HomeCards";
+import "./homeuser.css"
+
 export default function HomeUser () {
     
-    return(
-        <div>
-            <h2>Bem vindo!!</h2>
-        </div>
-    )
+    return (
+    <div className="HomeUser">
+      <Header className="MainHeader"/>
+      <HomeCards className="HomeCards"/>
+    </div>
+  );
 }

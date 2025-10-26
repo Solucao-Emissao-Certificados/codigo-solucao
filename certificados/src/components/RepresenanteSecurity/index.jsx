@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { supabase } from "../../services/supabase";
 
-export default function ProtectRoute({ children }) {
+export default function RepresentanteSecurity({ children }) {
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -10,7 +10,7 @@ export default function ProtectRoute({ children }) {
   useEffect(() => {
     async function checkUser() {
       const { data, error } = await supabase
-        .from("usuarios")
+        .from("representante")
         .select("id")
         .eq("id", id)
         .single();
@@ -28,5 +28,5 @@ export default function ProtectRoute({ children }) {
   }, [id]);
 
   if (loading) return <p>Carregando...</p>;
-  return isAuthenticated ? children : <Navigate to="/loginuser" />;
+  return isAuthenticated ? children : <Navigate to="/logirepresentante" />;
 }

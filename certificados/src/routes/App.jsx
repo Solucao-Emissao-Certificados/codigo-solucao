@@ -5,6 +5,8 @@ import LoginRepresentante from "../pages/Login/LoginRepresentante"
 import LoginUser from "../pages/Login/LoginUser"
 import HomeUser from "../pages/Home/HomeUser"
 import ProtectRoute from "../components/ProtectRoute"
+import HomeRepresentante from "../pages/Home/HomeRepresentante"
+import RepresentanteSecurity from "../components/RepresenanteSecurity"
 
 export default function App() {
   return (
@@ -28,6 +30,14 @@ export default function App() {
           <ProtectRoute>
             <HomeUser />
           </ProtectRoute>
+        }
+        />
+        <Route 
+        path="/homerepresentante/:id"
+        element={
+          <RepresentanteSecurity>
+            <HomeRepresentante />
+          </RepresentanteSecurity>
         }
         />
       </Routes>
