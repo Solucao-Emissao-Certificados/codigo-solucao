@@ -17,6 +17,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
+  transition: border-color 0.25s;
+  border: 1px solid transparent;
 }
 
 .link-representante-card:hover,

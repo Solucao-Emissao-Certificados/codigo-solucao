@@ -13,7 +13,7 @@ export default function HomeCertificados({ className }) {
     useEffect(() => {
         async function fetchCursos() {
             const { data, error } = await supabase
-                .from("cursos")
+                .from("participacao")
                 .select("*")
                 .eq("id", id)
                 .single();
@@ -38,7 +38,6 @@ export default function HomeCertificados({ className }) {
                     <div className='cursos-cards'>
                         <h2>Bem vindo, {cursos.nome}!</h2>
                         <p>Seu ID é: {cursos.id}</p>
-                        {/* Aqui você pode colocar o restante do conteúdo */}
                     </div>
                 ) : (
                     <>

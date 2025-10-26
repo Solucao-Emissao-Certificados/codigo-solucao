@@ -15,12 +15,11 @@ export default function HomeCards({ className }) {
             const { data, error } = await supabase
                 .from("cursos")
                 .select("*")
-                .eq("id", id)
-                .single();
+                .eq("id_user", id)
 
             if (error) {
-                console.error("Erro ao buscar Cursos", error);
-                setCursos(null);
+                console.error("Erro ao buscar Cursos: ", error);
+                setCursos([]);
             } else {
                 setCursos(data);
             }
@@ -31,18 +30,26 @@ export default function HomeCards({ className }) {
     }, [id]);
 
     if (loading) return <p>Carregando Cursos....</p>
+
     return (
         <div className={className}>
             <div className='home-container'>
-                {cursos ? (
+                {cursos.length > 0 ? (
                     <div className='cursos-cards'>
-                        <h2>Bem vindo, {cursos.nome}!</h2>
-                        <p>Seu ID é: {cursos.id}</p>
-                        {/* Aqui você pode colocar o restante do conteúdo */}
+                        <h2>Bem vindo!</h2>
+                        <div className='li-cards'>
+                            {cursos.map((curso) => (
+                                <div key={curso.id} className='curso-item'>
+                                    <h2>{curso.nome}</h2><br />
+                                    {curso.descricao}<br />
+                                    <p>Código de acesso: {curso.codigo_acesso}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 ) : (
                     <>
-                    <EmptyUser />
+                        <EmptyUser />
                     </>
                 )}
             </div>
