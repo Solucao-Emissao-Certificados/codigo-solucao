@@ -1,47 +1,62 @@
-# Solução para Emissão de Certificados
-Este repositório tem como objetivo armazenar os arquivos da matéria de PROJETO INTEGRADOR II da universidade CEUB. O nome do projeto que está sendo desenvolvido é "**Solução para Emissão de Certificados**".
+# 💼 Solução para Emissão de Certificados
 
-Esse projeto consiste em criar um site para facilitar o processo de entrega de certificados de cursos/oficinas organizados e realizados por organizações ou indivíduos que necessitam de um modelo para tal.
+Este repositório faz parte da disciplina **Projeto Integrador II** da **Universidade CEUB** e tem como objetivo armazenar os arquivos e códigos referentes ao projeto **Solução para Emissão de Certificados**.
 
-O projeto surgiu da proposta de facilitar o envio dos certificados das oficinas da monitoria do CEUB, mas, após uma conversa com com o coordenador do curso, descobrimos que essa solução já estava sendo desenvolvida, mas que poderíamos desenvolver algo similar e geral para preencher outras lacunas. A partir dessa proposta, nós modelamos estratégias para solucionar esse problema, sendo a solução o desenvolvimento de nossa aplicação.
+O projeto consiste no desenvolvimento de um site que facilita o processo de **entrega e gerenciamento de certificados** de cursos, oficinas e eventos, voltado para organizações ou indivíduos que necessitam de uma solução prática e padronizada para esse processo.
 
-## Parte técnica
-#### Esse projeto está sendo desenvolvido com as seguintes tecnologias:
-- React.js.
-- Vite.
-- Hmtl, CSS e JavaScript.
-- Bibliotecas como Router, Axios e Cors.
-- Supabase como banco de dados
-#### Além dessas tecnologias, também estamos utilizando das seguintes ferramentas:
-- Github Projects - Alocação de tarefas, documentação do projeto e histórias de usuários.
-- Figma - Design do site
-- Discord e WhatsApp - Comunicação
-- Github - Versionamento do projeto
+A proposta surgiu a partir da necessidade de otimizar o envio de certificados das oficinas de monitoria do CEUB. Após conversas com a coordenação do curso, identificamos que uma solução similar já estava em desenvolvimento, mas decidimos criar uma versão **mais genérica e abrangente**, capaz de atender diferentes contextos. A partir dessa ideia, modelamos estratégias para solucionar o problema, resultando no desenvolvimento desta aplicação.
 
-*Vale informar que o projeto está majoritariamente no Github, então seu desenvolvimento está sendo remoto, com exceções de dias em que estamos presentes nos laboratórios de informática do CEUB*
+---
 
-## Como rodar o projeto
-#### Antes de começar, certifique-se de ter instalado:
-- Node.js ou Yarn 
+## 💻 Parte Técnica
 
-#### Passo a passo
-1. Clone este repositório: `https://github.com/FelipeTolentino21/projeto-integrador.git`
-2. Acesse a pasta: `cd certificados-monitoria`
+### Tecnologias utilizadas
+- React.js + Vite  
+- HTML, CSS e JavaScript  
+- Bibliotecas: React Router, Axios e Cors  
+- Supabase (banco de dados)
+
+### Ferramentas de apoio
+- **GitHub Projects** → Gestão de tarefas, documentação e histórias de usuário  
+- **Figma** → Criação do design do site  
+- **Discord e WhatsApp** → Comunicação da equipe  
+- **GitHub** → Versionamento e colaboração remota  
+
+> O desenvolvimento do projeto ocorre majoritariamente de forma **remota**, com encontros presenciais pontuais nos laboratórios de informática do CEUB.
+
+---
+
+## ⚙️ Como Rodar o Projeto
+
+### Pré-requisitos
+- **Node.js** ou **Yarn** instalados em seu ambiente
+
+### Passo a passo
+1. Clone este repositório:  
+   ```bash
+   git clone https://github.com/Solucao-Emissao-Certificados/codigo-solucao
+2. Acesse a pasta: `cd certificados`
 3. Intale as dependências: `npm install`
 4. Inicie o servidor de desenvolvimento: `npm run dev`
 5. Abra o navegador na porta que o Vite indicar
 
-## Objetivos iniciais
-Alguns dos nossos objetivos para esse projeto consistem em:
-1. Desenvolver a tela de cadastro e login ✔️
-2. Desenvolver telas de quem está criando um certificado e de quem está utilizando do site para assinar um certificado
-3. Adicionar/Alterar estrutura do banco de dados para funcionar em relação aos itens anteriores
+---
 
+## 🎯 Objetivos Iniciais
 
-## Estrutura do Projeto
-A seguir, temos a estrutura do projeto ao acessar a pasta `certificados-monitoria`.
+✅ Desenvolver as telas de cadastro e login
 
-*Essa estrutura está propensa a mudanças*
+Criar as telas para emissão e assinatura de certificados
+
+Ajustar a estrutura do banco de dados conforme as novas funcionalidades
+
+---
+
+## 🧩 Estrutura do Projeto
+A seguir, a estrutura atual do projeto ao acessar a pasta certificados-monitoria.
+
+> Sujeita a alterações conforme o desenvolvimento.
+
 ```
 📦 certificados-monitoria
 |- 📂src
@@ -60,15 +75,25 @@ A seguir, temos a estrutura do projeto ao acessar a pasta `certificados-monitori
 |- 📜 vite.config.js
 📜 README.md        // Arquivo de leitura incial do projeto
 ```
+---
 
-## Funcionalidades do projeto
-A princípio, o projeto disponibilizará as seguintes funcionalidades.
-- Permitir que quem criou um certificado vejam e utilizem do processo de emissão de certificados para aprovar seus usuários de suas oficinas ou cursos
-- Permitir que quem quer assinar um certificado consiga ver os certificados que tem disponíveis para ele e propriamente selecione um para fazer a assinatura.
+## 🚀 Funcionalidades
+O projeto disponibilizará inicialmente as seguintes funcionalidades:
+- Permitir que organizadores criem e gerenciem certificados de cursos ou oficinas
+- Permitir que usuários acessem, visualizem e assinem digitalmente seus certificados
 
-Para saber mais, acesse o [Escopo do projeto](https://docs.google.com/document/d/1RyOy5Z-JlPvY33MGmqHTKD1hUmSSMS9YT-ahRDMf9HI/edit?usp=sharing), ou vá ao repositório dos documentos dentro da organização e acesse o escopo por lá.
+> Para mais detalhes, acesse o Escopo do Projeto
+ou consulte o repositório de documentos dentro da organização.
 
-## Colaboradores
-- Felipe Tolentino: Desenvolvedor, Designer de UI/UX, Gerente de projeto, Documentador
-- Luis Guilherme: Desenvolvedor, Designer de UI/UX, Documentador
-- Lucas Daniel: Desenvolvedor, Gerente de projeto, DBA (Administrador de Banco de Dados), Especialista em Segurança
+---
+
+## 👥 Colaboradores
+- Felipe Tolentino → Desenvolvedor, Designer UI/UX, Gerente de Projeto, Documentador
+
+- Luis Guilherme → Desenvolvedor, Designer UI/UX, Documentador
+
+- Lucas Daniel → Desenvolvedor, Gerente de Projeto, DBA, Especialista em Segurança
+
+---
+
+📘 *Organização acadêmica desenvolvida como parte do curso de Ciência da Computação do CEUB.*
