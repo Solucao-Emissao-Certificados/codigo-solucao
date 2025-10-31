@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { supabase } from "../../../services/supabase"
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import IconRepresentante from "../../../img/IconRepresentante.png"
-import excluir from "../../../img/excluir.png"
+import seta from "../../../img/seta.png"
 
 import "../login.css"
 export default function LoginRepresentante() {
@@ -43,7 +44,7 @@ export default function LoginRepresentante() {
     return (
         <div className="Login">
             <div className="login">
-                <Link to="/"><img src={excluir} alt="voltar" height={35} /></Link>
+                <Link to="/"><img src={seta} alt="voltar" height={35} /></Link>
                 <div className="login-container">
                     <img src={IconRepresentante} alt="Icone Representante" />
                     <h2 className="login-titulo">Login Representante</h2>
