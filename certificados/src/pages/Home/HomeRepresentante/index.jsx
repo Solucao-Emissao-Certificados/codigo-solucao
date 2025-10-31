@@ -1,4 +1,4 @@
-import Header from "../../../components/header"
+import Header from "../../../components/Header"
 import HomeCertificados from "../../../components/HomeCertificados"
 
 import "./homerepresentante.css"
