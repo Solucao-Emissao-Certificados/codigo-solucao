@@ -3,6 +3,7 @@ import { supabase } from "../../../services/supabase"
 import { useNavigate } from "react-router-dom"
 
 import IconUser from "../../../img/IconUser.png"
+import excluir from "../../../img/excluir.png"
 
 import "../login.css"
 export default function LoginUser() {
@@ -44,44 +45,47 @@ export default function LoginUser() {
 
     return (
         <div className="Login">
-            <div className="login-container">
-                <img src={IconUser} alt="Icone Usuário" className="login-card" />
-                <h2 className="login-titulo">Login Usuário</h2>
-                <form className="login-form" onSubmit={VerificarLogin}>
-                    <label htmlFor="email">
-                        Seu Email
-                        <input
-                            className="login-input"
-                            type="email"
-                            placeholder="email@email.com"
-                            id="email"
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
-                            required
-                        />
-                    </label>
+            <div className="login">
+                <Link to="/"><img src={excluir} alt="voltar" height={35} /></Link>
+                <div className="login-container">
+                    <img src={IconUser} alt="Icone Usuário" className="login-card" />
+                    <h2 className="login-titulo">Login Usuário</h2>
+                    <form className="login-form" onSubmit={VerificarLogin}>
+                        <label htmlFor="email">
+                            Seu Email
+                            <input
+                                className="login-input"
+                                type="email"
+                                placeholder="email@email.com"
+                                id="email"
+                                onChange={(e) => setEmail(e.target.value)}
+                                value={email}
+                                required
+                            />
+                        </label>
 
 
-                    <label htmlFor="password">
-                        Sua Senha
-                        <input
-                            className="login-input"
-                            type="password"
-                            id="password"
-                            onChange={(e) => setSenha(e.target.value)}
-                            value={senha}
-                            required
-                        />
-                    </label>
+                        <label htmlFor="password">
+                            Sua Senha
+                            <input
+                                className="login-input"
+                                type="password"
+                                id="password"
+                                onChange={(e) => setSenha(e.target.value)}
+                                value={senha}
+                                required
+                            />
+                        </label>
 
-                    <label htmlFor="remember">
-                        <input type="checkbox" id="remember" />
-                        Manter-me logado
-                    </label>
+                        <label htmlFor="remember">
+                            <input type="checkbox" id="remember" />
+                            Manter-me logado
+                        </label>
 
-                    <button className="login-button" type="submit">Logar</button>
-                    <p>{message}</p>
-                </form>
+                        <button className="login-button" type="submit">Logar</button>
+                        <p>{message}</p>
+                    </form>
+                </div>
             </div>
         </div>
     )
