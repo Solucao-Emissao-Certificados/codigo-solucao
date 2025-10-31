@@ -1,4 +1,4 @@
-import Header from "../../../components/header"
+import Header from "../../../components/Header";
 import HomeCards from "../../../components/HomeCards";
 import Footer from "../../../components/Footer";
 import "./homeuser.css"
