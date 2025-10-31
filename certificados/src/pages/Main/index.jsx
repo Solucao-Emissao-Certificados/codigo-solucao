@@ -1,4 +1,4 @@
-import Header from "../../components/header"
+import Header from "../../components/Header"
 import FormsCard from "../../components/MainPage/FormsCard"
 import MainBody from "../../components/MainPage/MainBody"
 import Footer from "../../components/Footer"
