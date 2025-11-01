@@ -1,11 +1,10 @@
-import iconUser from "../../../../img/IconUser.png"
 import styles from "../maincards.module.css"
 
 export default function UserCard() {
     return(
         <div className={styles.mainCard}>
             <img 
-                src={iconUser}
+                src="https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/IconUser.png"
                  alt="Icone do Usuário"
                 className={styles.imgCard}
             />

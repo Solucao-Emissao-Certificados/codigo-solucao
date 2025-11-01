@@ -5,7 +5,7 @@ export default function RepresentanteCard() {
     return(
         <div className={styles.mainCard}>
             <img 
-                src={iconRepresentante} 
+                src="https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/IconRepresentante.png" 
                 alt="Icone do Representante" 
                 className={styles.imgCard}
             />

@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import sun from "../../img/sun.png";
-import moon from "../../img/moon.png";
 import "./header.css";
 
 export default function Header({ className }) {
@@ -21,7 +19,7 @@ export default function Header({ className }) {
       <h1>S.E.C</h1>
       <div className="tema">
         <img
-          src={darkMode ? moon : sun}
+          src={darkMode ? "https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/moon.png" : "https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/sun.png"}
           alt="Alternar tema"
           height={40}
           onClick={() => setDarkMode(!darkMode)}
