@@ -48,7 +48,7 @@ export default function LoginUser() {
     return (
         <div className="Login">
             <div className="login">
-                <Link to="/"><img src={seta} alt="voltar" height={35} /></Link>
+                <Link to="/"><img src="https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/seta.png" alt="voltar" height={35} /></Link>
                 <div className="login-container">
                     <img src="https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/IconUser.png" alt="Icone Usuário" className="login-card" />
                     <h2 className="login-titulo">Login Usuário</h2>

@@ -44,7 +44,7 @@ export default function LoginRepresentante() {
     return (
         <div className="Login">
             <div className="login">
-                <Link to="/"><img src={seta} alt="voltar" height={35} /></Link>
+                <Link to="/"><img src="https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/seta.png" alt="voltar" height={35} /></Link>
                 <div className="login-container">
                     <img src="https://unpwemjugtntyiedmdvc.supabase.co/storage/v1/object/public/images/IconRepresentante.png" alt="Icone Representante" />
                     <h2 className="login-titulo">Login Representante</h2>
