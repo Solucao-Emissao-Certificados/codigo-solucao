@@ -96,4 +96,8 @@ ou consulte o repositório de documentos dentro da organização.
 
 ---
 
+> Site atualmente sendo hospedado em: https://sistema-certificados.netlify.app/
+
+---
+
 📘 *Organização acadêmica desenvolvida como parte do curso de Ciência da Computação do CEUB.*
