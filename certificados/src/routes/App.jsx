@@ -7,6 +7,8 @@ import HomeUser from "../pages/Home/HomeUser"
 import ProtectRoute from "../components/ProtectRoute"
 import HomeRepresentante from "../pages/Home/HomeRepresentante"
 import RepresentanteSecurity from "../components/RepresenanteSecurity"
+import RegisterUser from "../pages/Register/RegisterUser"
+import RegisterRepresentante from "../pages/Register/RegisterRepresentante"
 
 export default function App() {
   return (
@@ -38,6 +40,16 @@ export default function App() {
           <RepresentanteSecurity>
             <HomeRepresentante />
           </RepresentanteSecurity>
+        }
+        />
+        <Route path="/registeruser"
+        element={
+          <RegisterUser />
+        }
+        />
+        <Route path="/registerrepresentante"
+        element={
+          <RegisterRepresentante />
         }
         />
       </Routes>
