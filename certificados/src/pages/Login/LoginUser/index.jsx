@@ -20,7 +20,7 @@ export default function LoginUser() {
         setMessage('Entrando...');
 
         const { data, error } = await supabase
-            .from('usuarios')
+            .from('pessoa')
             .select('*')
             .eq('email', email)
             .eq('senha', senha);

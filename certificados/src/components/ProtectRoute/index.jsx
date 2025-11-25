@@ -10,9 +10,10 @@ export default function ProtectRoute({ children }) {
   useEffect(() => {
     async function checkUser() {
       const { data, error } = await supabase
-        .from("usuarios")
-        .select("id")
+        .from("pessoa")
+        .select("id, tipo")
         .eq("id", id)
+        .eq("tipo", "usuario")
         .single();
 
       if (error || !data) {

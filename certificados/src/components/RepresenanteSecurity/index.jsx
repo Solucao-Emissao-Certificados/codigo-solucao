@@ -10,9 +10,10 @@ export default function RepresentanteSecurity({ children }) {
   useEffect(() => {
     async function checkUser() {
       const { data, error } = await supabase
-        .from("representante")
-        .select("id")
+        .from("pessoa")
+        .select("id, tipo")
         .eq("id", id)
+        .eq("tipo", "representante")
         .single();
 
       if (error || !data) {

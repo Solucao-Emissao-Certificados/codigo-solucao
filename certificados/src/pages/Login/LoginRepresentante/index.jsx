@@ -3,9 +3,6 @@ import { supabase } from "../../../services/supabase"
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
 
-import IconRepresentante from "../../../img/IconRepresentante.png"
-import seta from "../../../img/seta.png"
-
 import "../login.css"
 export default function LoginRepresentante() {
 
@@ -19,7 +16,7 @@ export default function LoginRepresentante() {
         setMessage('Entrando...');
 
         const { data, error } = await supabase
-            .from('representante')
+            .from('pessoa')
             .select('*')
             .eq('email', email)
             .eq('senha', senha);
