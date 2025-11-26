@@ -9,6 +9,7 @@ import HomeRepresentante from "../pages/Home/HomeRepresentante"
 import RepresentanteSecurity from "../components/RepresenanteSecurity"
 import RegisterUser from "../pages/Register/RegisterUser"
 import RegisterRepresentante from "../pages/Register/RegisterRepresentante"
+import DocumentPages from "../components/Documentpages"
 
 export default function App() {
   return (
@@ -50,6 +51,13 @@ export default function App() {
         <Route path="/registerrepresentante"
         element={
           <RegisterRepresentante />
+        }
+        />
+        <Route path="/certificado/:id"
+        element={
+          <ProtectRoute>
+            <DocumentPages />
+          </ProtectRoute>
         }
         />
       </Routes>

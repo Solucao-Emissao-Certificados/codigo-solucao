@@ -13,9 +13,9 @@ export default function HomeCards({ className }) {
     useEffect(() => {
         async function fetchCursos() {
             const { data, error } = await supabase
-                .from("cursos")
+                .from("certificado")
                 .select("*")
-                .eq("id_user", id)
+                .eq("user_assinantes", id)
 
             if (error) {
                 console.error("Erro ao buscar Cursos: ", error);
@@ -42,7 +42,6 @@ export default function HomeCards({ className }) {
                                 <div key={curso.id} className='curso-item'>
                                     <h2>{curso.nome}</h2><br />
                                     {curso.descricao}<br />
-                                    <p>Código de acesso: {curso.codigo_acesso}</p>
                                 </div>
                             ))}
                         </div>
