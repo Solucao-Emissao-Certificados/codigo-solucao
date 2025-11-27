@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 
 export default function DocumentPages() {
 
+    const [docNome, setDocNome] = useState("")
+    const [docUrl, setDocUrl] = useState()
+
     const [certificado, setCertificado] = useState()
     useEffect(() => {
         async function docPage() {
@@ -19,7 +22,7 @@ export default function DocumentPages() {
         }
 
         docPage();
-        
+
     }, [id])
 
     return(
