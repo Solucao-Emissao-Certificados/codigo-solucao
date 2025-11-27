@@ -13,6 +13,7 @@ import HomeRepresentante from "../pages/Home/HomeRepresentante"
 import RegisterUser from "../pages/Register/RegisterUser"
 import RegisterRepresentante from "../pages/Register/RegisterRepresentante"
 import DocumentPages from "../pages/DocumentPage"
+import AssinarDocumento from "../pages/AssinarDocumento"
 
 export default function App() {
   return (
@@ -60,6 +61,13 @@ export default function App() {
         element={
           <CertificadoSecurity>
             <DocumentPages />
+          </CertificadoSecurity>
+        }
+        />
+        <Route path="/assinatura/:id"
+        element={
+          <CertificadoSecurity>
+            <AssinarDocumento />
           </CertificadoSecurity>
         }
         />

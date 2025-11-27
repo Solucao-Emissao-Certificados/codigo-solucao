@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { supabase } from "../../services/supabase"
 
@@ -43,7 +43,7 @@ export default function DocumentPages() {
                 />
 
                 <p>{certificado.descricao}</p>
-                <button>Assinar Documento</button>
+                <Link to={`/assinatura/${certificado.id}`}>Assinar Documento</Link>
             </div>
         </div>
     )
