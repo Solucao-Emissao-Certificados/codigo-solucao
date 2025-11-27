@@ -29,6 +29,11 @@ export default function LoginRepresentante() {
 
         if (data.length > 0) {
             const representante = data[0];
+            localStorage.setItem("pessoa",JSON.stringify({
+                id: representante.id,
+                tipo: representante.tipo
+            }))
+
             console.log('Representante encontrado: ', data[0]);
             setMessage('Login realizado com sucesso!')
             setTimeout(() => {

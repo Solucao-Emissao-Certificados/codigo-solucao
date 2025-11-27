@@ -4,12 +4,15 @@ import Main from "../pages/Main"
 import LoginRepresentante from "../pages/Login/LoginRepresentante"
 import LoginUser from "../pages/Login/LoginUser"
 import HomeUser from "../pages/Home/HomeUser"
-import ProtectRoute from "../components/ProtectRoute"
+
+import ProtectRoute from "../components/security/ProtectRoute"
+import RepresentanteSecurity from "../components/security/RepresentanteSecurity"
+import CertificadoSecurity from "../components/security/CertificadoSecurity"
+
 import HomeRepresentante from "../pages/Home/HomeRepresentante"
-import RepresentanteSecurity from "../components/RepresenanteSecurity"
 import RegisterUser from "../pages/Register/RegisterUser"
 import RegisterRepresentante from "../pages/Register/RegisterRepresentante"
-import DocumentPages from "../components/Documentpages"
+import DocumentPages from "../pages/DocumentPage"
 
 export default function App() {
   return (
@@ -55,9 +58,9 @@ export default function App() {
         />
         <Route path="/certificado/:id"
         element={
-          <ProtectRoute>
+          <CertificadoSecurity>
             <DocumentPages />
-          </ProtectRoute>
+          </CertificadoSecurity>
         }
         />
       </Routes>

@@ -3,10 +3,6 @@ import { supabase } from "../../../services/supabase"
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
 
-import IconUser from "../../../img/IconUser.png"
-import excluir from "../../../img/excluir.png"
-import seta from "../../../img/seta.png"
-
 import "../login.css"
 export default function LoginUser() {
 
@@ -32,11 +28,18 @@ export default function LoginUser() {
         }
 
         if (data.length > 0) {
-            const usuarios = data[0];
+            const usuario = data[0];
+
+            localStorage.setItem("pessoa",JSON.stringify({
+                id: usuario.id,
+                tipo: usuario.tipo
+            }))
+
             console.log('Usuário encontrado: ', data[0]);
             setMessage('Login realizado com sucesso!')
+
             setTimeout(() => {
-                navigate(`/homeuser/${usuarios.id}`)
+                navigate(`/homeuser/${usuario.id}`)
             }, 1500)
         } else {
             console.log('Usuário não encontrado ou senha incorreta.');
