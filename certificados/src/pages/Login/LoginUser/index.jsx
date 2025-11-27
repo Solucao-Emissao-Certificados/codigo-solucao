@@ -90,6 +90,10 @@ export default function LoginUser() {
                         <button className="login-button" type="submit">Logar</button>
                         <p>{message}</p>
                     </form>
+                    <div className="login-register-card">
+                        <h3>Ainda não tem conta? </h3>
+                        <Link to="/registeruser" id="login-register-a"><p>Cadastrar-se</p></Link>
+                    </div>
                 </div>
             </div>
         </div>

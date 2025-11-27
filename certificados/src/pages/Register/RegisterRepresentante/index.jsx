@@ -40,7 +40,7 @@ export default function RegisterRepresentante() {
     return (
         <div>
             <div>
-                <h2>Cadastro User</h2>
+                <h2>Cadastro Representante</h2>
                 <form onSubmit={createRepresentante}>
                     <label>
                         Nome

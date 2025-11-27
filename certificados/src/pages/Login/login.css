@@ -90,3 +90,15 @@
 .login-button {
     width: 100%;
 }
+
+.login-register-card{
+    display: flex;
+    gap: 20px;
+}
+
+#login-register-a {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
