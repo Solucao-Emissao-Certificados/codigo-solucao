@@ -94,7 +94,7 @@ ou consulte o repositório de documentos dentro da organização.
 
 - Lucas Daniel → Desenvolvedor, Gerente de Projeto, DBA, Especialista em Segurança
 
-- *Miguel Castro → Documentador
+- Miguel Castro → Documentador
 
 ---
 
