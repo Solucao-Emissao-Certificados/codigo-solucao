@@ -14,6 +14,8 @@ import RegisterUser from "../pages/Register/RegisterUser"
 import RegisterRepresentante from "../pages/Register/RegisterRepresentante"
 import DocumentPages from "../pages/DocumentPage"
 import AssinarDocumento from "../pages/AssinarDocumento"
+import StatusSecurity from "../components/security/StatusSecurity"
+import StatusPage from "../pages/StatusPage"
 
 export default function App() {
   return (
@@ -64,6 +66,15 @@ export default function App() {
           </CertificadoSecurity>
         }
         />
+        <Route path="/status/:id"
+        element={
+          <StatusSecurity>
+            <StatusPage />
+          </StatusSecurity>
+        }
+        />
+
+
         <Route path="/assinatura/:id"
         element={
           <CertificadoSecurity>
