@@ -31,7 +31,6 @@ export default function HomeCards({ className }) {
     }, [id]);
 
     if (loading) return <p>Carregando Certificados...</p>;
-
     return (
         <div className={className}>
             <div className='home-container'>
@@ -53,7 +52,9 @@ export default function HomeCards({ className }) {
                         </div>
                     </div>
                 ) : (
+                    <>
                     <EmptyUser />
+                    </>
                 )}
             </div>
         </div>
