@@ -2,12 +2,14 @@ import Header from "../../components/Header"
 import MainStatus from "../../components/MainPage/MainStatus"
 import Footer from "../../components/Footer"
 
+import "./statuspage.css"
+
 export default function StatusPage() {
     return(
-        <div>
+        <div className="status">
             <Header className="MainHeader"/>
-            <MainStatus />
-            <Footer />
+            <MainStatus className="status-page"/>
+            <Footer className="footer"/>
         </div>
     )
 }

@@ -1,6 +1,8 @@
 import { Link, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { supabase } from "../../services/supabase"
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 import "./documentpage.css"
 
@@ -30,6 +32,8 @@ export default function DocumentPages() {
     }
 
     return(
+        <>
+        <Header  className="MainHeader"/>
         <div className="doc-page">
             <h2>Assinar Documento</h2>
 
@@ -46,5 +50,7 @@ export default function DocumentPages() {
                 <Link to={`/assinatura/${certificado.id}`}>Assinar Documento</Link>
             </div>
         </div>
+        <Footer className="footer"/>
+        </>
     )
 }

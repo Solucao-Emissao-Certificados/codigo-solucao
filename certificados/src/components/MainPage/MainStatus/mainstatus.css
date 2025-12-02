@@ -1,24 +1,16 @@
-.doc-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
-
-.doc-container {
-    width: 350px;
+.status-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    height: 80vh;
 }
 
-.doc-container p {
-    text-align: center;
-}
-
-.doc-viewwe {
-    height: 425px;
+.status-assinado, .status-pendente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }

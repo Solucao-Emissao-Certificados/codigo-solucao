@@ -21,16 +21,38 @@
     flex-direction: column;
 }
 
+.cursos-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .li-cards {
     display: flex;
     flex-direction: row;
 
     gap: 30px;
     list-style: none;
+    justify-content: center;
+    align-items: center;
 
     margin-top: 15px;
+    width: 45%;
 
 }
+.certificado-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-color);
+    border: 2px solid #646cff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+}
+
 
 .curso-item{
     display: flex;
