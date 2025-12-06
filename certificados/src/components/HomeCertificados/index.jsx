@@ -41,7 +41,7 @@ export default function HomeCertificados({ className }) {
                             {certificados.map(certificado => (
                                 <Link
                                     key={certificado.id}
-                                    to={`/status/${certificado.id}`}
+                                    to={`/certificado/${certificado.id}`}
                                 >
                                     <div className='certificado-item'>
                                         <h2>{certificado.nome}</h2>

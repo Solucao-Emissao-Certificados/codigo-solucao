@@ -4,11 +4,11 @@ export default function StatusSecurity({ children }) {
     const pessoa = JSON.parse(localStorage.getItem("pessoa"))
 
     if (!pessoa) {
-        return <Navigate to="/loginrepresentante" replace />
+        return <Navigate to="/loginruser" replace />
     }
 
-    if (pessoa.tipo !== "representante") {
-        return <Navigate to="/loginrepresentante" replace />
+    if (pessoa.tipo !== "usuario") {
+        return <Navigate to="/loginruser" replace />
     }
 
     return children

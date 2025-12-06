@@ -14,7 +14,7 @@ export default function MainStatus({ className }) {
             const { data, error } = await supabase
                 .from("certificado")
                 .select("*")
-                .eq("id_representante", id)
+                .eq("user_assinantes", id)
                 .single()
 
 

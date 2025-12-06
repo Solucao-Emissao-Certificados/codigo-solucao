@@ -19,9 +19,9 @@ export default function HomeCards({ className }) {
 
             if (error) {
                 console.error("Erro ao buscar certificados: ", error);
-                setCertificados([]);  // deixa vazio
+                setCertificados([]); 
             } else {
-                setCertificados(data); // salva os dados
+                setCertificados(data);
             }
 
             setLoading(false);
@@ -41,7 +41,7 @@ export default function HomeCards({ className }) {
                             {certificados.map(certificado => (
                                 <Link
                                     key={certificado.id}
-                                    to={`/certificado/${certificado.id}`}
+                                    to={`/status/${certificado.id}`}
                                 >
                                     <div className='certificado-item'>
                                         <h2>{certificado.nome}</h2>
