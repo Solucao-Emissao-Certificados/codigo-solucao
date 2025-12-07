@@ -51,9 +51,12 @@
     border: 2px solid #646cff;
     border-radius: 10px;
     padding: 20px;
-    height: 100px;
+    min-height: 150px;
+    height: auto;
 }
-
+.certificado-item:hover{
+    color: #535bf2;
+}
 
 .curso-item{
     display: flex;
